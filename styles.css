@@ -164,6 +164,7 @@ strong {
 }
 
 .gallery {
+  margin-top: 100px;
   text-align: center;
   background: #eff4fd;
   line-height: 25px;
@@ -179,5 +180,58 @@ strong {
 }
 
 footer {
+  padding: 100px;
+  background: #eff4fd;
   text-align: center;
 }
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact {
+  background: #eff4fd
+}
+
+#contact p {
+  text-indent: 50px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+input,
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
