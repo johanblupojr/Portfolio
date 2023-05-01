@@ -175,10 +175,6 @@ strong {
   height: 100dvh;
 }
 
-#contact {
-  text-align: center;
-}
-
 footer {
   padding: 100px;
   background: #eff4fd;
@@ -197,11 +193,12 @@ label {
   margin-bottom: 10px;
 }
 
-#contact {
-  background: #eff4fd
+.contact {
+  background: #eff4fd;
+  text-align: center;
 }
 
-#contact p {
+.contact p {
   text-indent: 50px;
   line-height: 25px;
   letter-spacing: 2px;
