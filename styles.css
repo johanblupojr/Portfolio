@@ -19,6 +19,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 nav img {
   height:100px;
   border-radius: 50px;
@@ -38,6 +39,10 @@ nav ul li a {
 
 nav ul li a:hover{
   color: red;
+}
+
+.flex {
+  display: flex;
 }
 
 .para1 {
@@ -111,7 +116,7 @@ span {
   margin-top: 20px;
   width: 80%;
   margin: auto;
-  padding: 150px;
+  padding: 150px 0 150px 0;
   align-items: center;
   justify-content: space-between
 }
@@ -127,6 +132,10 @@ span {
 strong {
   color: #c50303;
   font-size: 25px;
+}
+
+.main {
+  display: flexbox;
 }
 
 .work, .education {
