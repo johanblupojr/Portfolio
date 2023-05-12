@@ -11,22 +11,18 @@
 </head>
 
 <body class="bg-light">  
-  <div class="top">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a href="https://github.com/johanblupojr/Portfolio">
+          <a class="navbar-brand" href="https://github.com/johanblupojr/Portfolio">
             <img class="rounded-circle" id="pic1" src="images/Pic1.jpg" alt="My Photo" height="100">
           </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <a class="navbar-brand" href="#"></a>
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-              <li class="nav-item">
+            <ul class="navbar-nav mr-auto ms-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
                 <a class="nav-link" href="#Home">Home</a>
               </li>
               <li class="nav-item">
@@ -47,24 +43,18 @@
       </nav>
     </header>
    
-    <div class="flex">
-        <div class="para1">
+
+    <div class="container">
+        <div class="ps-5 py-5 text-center">
           <h1>Hi! I'm <span> Johan </span> </h1>
           <p>This is my official portfolio website
           <br> Come and see my work experience and skills
           </p>
-          <a href="https://drive.google.com/file/d/1z-SHDpasIAeLG9KpZ9pIFHLf8enNr2_3/view?usp=share_link">DOWNLOAD CV</a>
+          <a type="button" class="btn btn-dark" href="https://drive.google.com/file/d/1z-SHDpasIAeLG9KpZ9pIFHLf8enNr2_3/view?usp=share_link">DOWNLOAD CV</a>
         </div>
+    </div>
 
-        <div class="images">
-            <img src="images/shape-27535.png" alt="" id="shape">
-            <img src="images/Photo1.png" alt="" id="photo">
-        </div>
-      </div>  
-
-
-
-<div class="container mb-5">
+<div class="container mb-5  pt-4">
   <section class="bg-light" id="about" >
     <h1 class="fw-bold">About Me</h1>
     <br>
@@ -159,8 +149,8 @@
 </div>
 
 
-<div class="container">
-  <h1 class="lead fw-bold text-center">Project Gallery</h1>
+<div class="container mt-5">
+  <h1 class="lead fw-bold text-center mt-5 mb-3" id="gallery">Project Gallery</h1>
     <div class="carousel slide" id="carouselSlider" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -191,40 +181,75 @@
 
 
 
-<section class="contact1">
-  <h1 id="contact1">Contact Me</h1>
-    <br>
-    <p><strong>I'm always eager to hear your opinions and suggestions</strong></p>
+<div class="container">
+  <h1 class= "lead fw-bold text-center mt-5" id="contact1">Contact Me</h1>
+    <p class="text-center"><strong>I'm always eager to hear your opinions and suggestions</strong></p>
     <br>
         <form action="https://script.google.com/macros/s/AKfycbw3uQNHKL_P-0JOd7xpL4ADJem331qa7XqmwD2FV-n7IYYlGozwAWjRbjC3SGSgKX0MPg/exec" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+
+          <label for="name" class="form-label ">Name:</label>
+          <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required>
           <br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <label for="email" class="form-label">Email:</label>
+          <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" required>
           <br>
-          <label for="message">Message/Review:</label>
-          <textarea id="message" name="message" required></textarea>
+          <label for="message" class="form-label">Message/Review:</label>
+          <textarea class="form-control" id="message" name="message" placeholder="Enter message"required></textarea>
           <br>
-          <input type="submit" value="Sumbit" id="submit">
+          <div class="text-center">
+          <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"id="submit">Submit</button>
+          </div>
+<!--Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h1 class="modal-title">Thank you very much!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Your review helps me a lot!
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
-        <a href="#" id="totop" >Back to Top</a>
-</section>
+  </div>
 
+<div class="py-5 text-center">
+  <a  href="#" id="totop" >Back to Top</a>
 </div>
-
-<footer>
+<footer class="text-center">
   <p>&copy; 2023 My Portfolio</p>
   <a href="https://www.facebook.com/johanblupojr"><img src="images/logo-facebook.png" width="40px"></a>
   <a href="https://www.linkedin.com/in/johanblupojr/"><img src="/Portfolio/images/linkedin-logo.png" width="40px"></a>
   <a href="https://www.instagram.com/jooohaaaaan/"><img src="/Portfolio/images/logo-ig-png-32458.png" width="40px"></a>
 </footer>
+<script>
+  const form = document.querySelector('form');
+  const modalHeader = document.querySelector('.modal-header h1');
+  
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    
+    const formData = new FormData(event.target);
+    const name = formData.get('name');
+    
+    modalHeader.textContent = `Thank you ${name}!`;
+    
+    const modal = new bootstrap.Modal(document.querySelector('#myModal'));
+    modal.show();
+  });
+</script>
+
 </body>
 </html>
 
-
-
-
-
-
-</html>
